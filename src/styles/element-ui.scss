@@ -1,0 +1,128 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    min-width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+//修改开始
+.el-table--medium .el-table__cell {
+  padding: 4px 0px;
+}
+
+// .el-table__header tr th.el-table__cell {
+//   background-color: #f4f4f4;
+//   font-weight: bold;
+//   color: black;
+// }
+
+// .el-table__body tr.el-table__row:nth-child(even) {
+//   background-color: #f4f4f4;
+// }
+
+.el-upload--picture-card {
+  width: 100px !important;
+  height: 100px !important;
+  line-height: 100px !important;
+}
+
+.upload-imgs {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.read-only {
+  position: relative;
+}
+
+.read-only::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.el-form-item__content .edui-editor {
+  line-height: normal !important;
+  width: 100% !important;
+}

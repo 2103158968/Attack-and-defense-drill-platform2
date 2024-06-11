@@ -1,0 +1,374 @@
+.app-body {
+    margin-top: 30px;
+}
+
+.text-container {
+    width: 200px;
+    overflow: hidden;
+}
+
+view,
+text {
+    box-sizing: border-box;
+}
+
+.row-nowrap {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.flex-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex-inline-wrap {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+}
+
+.flex-con {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.flex-tow {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    flex: 2;
+}
+
+.flex-vertical {
+    -webkit-box-orient: vertical;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+}
+
+.flex-horizontal {
+    -webkit-box-orient: horizontal;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+
+}
+
+.box-pack {
+    -webkit-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.box-pack-right {
+    -webkit-box-pack: end;
+    box-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.box-pack-justify {
+    -webkit-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.box-align {
+    -webkit-box-align: center;
+    box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.box-align-b {
+    -webkit-box-align: end;
+    box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+
+.box-align-t {
+    -webkit-box-align: start;
+    box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+.border-t,
+.border-b {
+    position: relative;
+}
+
+.border-t:before,
+.border-b:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ddd;
+    right: 0;
+    height: 1px;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.border-b:after {
+    top: auto;
+    bottom: 0;
+}
+
+.input-placeholder {
+    color: #d0d8e4;
+}
+
+.flex-rowWrap {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.wxParse-inline {
+    display: inline;
+}
+
+.wxParse-img {
+    display: block;
+    width: 100% !important;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+.wx_container {
+    width: 750rpx;
+}
+
+.border-l,
+.border-r {
+    position: relative;
+}
+
+.border-l:before,
+.border-r:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ddd;
+    bottom: 0;
+    width: 1px;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.border-r:after {
+    left: auto;
+    right: 0;
+}
+
+.readonly {
+    position: relative;
+}
+
+.readonly::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.wx-picker {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    bottom: 0;
+}
+//body
+.sys-body{
+    padding: 18px 24px;
+    background-color: #fff;
+}
+//标题
+.sys-title{
+    height: 18px;
+        position: relative;
+        padding-left: 10px;
+     font-family: HarmonyOS_Sans_SC_Bold;
+        font-size: 18px;
+        color: #000000;
+        font-weight: 600;
+    
+        &::before {
+            content: '';
+            display: block;
+            width: 6px;
+            height: 100%;
+            background-color: #2b75fc;
+            border-radius: 3px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+}
+//分割标题
+.sys-dialog-title{
+    font-family: HarmonyOS_Sans_SC;
+        font-size: 18px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #141414;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+       
+
+}
+ .sys-dialog-title::after {
+     content: "";
+     flex-grow: 1;
+
+     border-top: 1px solid #e8e8e8;
+
+     margin-left: 10px;
+ }
+//分割线
+.sys-divider{
+        display: block;
+            height: 1px;
+            width: 100%;
+            margin: 13px 0;
+            background-color: #e7e7e7;
+                position: relative
+            
+}
+// 按钮
+.sys-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    white-space: nowrap;
+     padding: 0 11px;
+    border-radius: 5px;
+    height: 36px;
+    font-size: 16px;
+}
+.sys-btn:nth-child(n+2){
+    margin-left: 12px;
+}
+//增加
+.sys-add-btn{
+    .el-icon-add {
+            background: url('../assets/images/icon.png') no-repeat;
+            background-size: 100%;
+            width: 17px;
+            height: 17px;
+            margin-right: 8px;
+        }
+         background-color: #2964fd;
+
+}
+//删除
+.sys-del-btn{
+    .el-icon-del {
+            background: url('../assets/images/icon-btn_14.png') no-repeat;
+            background-size: 100%;
+        width: 17px;
+            height: 18px;
+            margin-right: 8px;
+        }
+    
+        background-color: #fe5c36;
+}
+//导出
+.sys-up-btn {
+   
+
+    background-color: #ffa21a;
+}
+ .el-icon-up {
+     background: url('../assets/images/icon-btn_11.png') no-repeat;
+     background-size: 100%;
+     width: 18px;
+     height: 18px;
+     margin-right: 8px;
+ }
+//导入
+.sys-down-btn {
+    background-color: #2964fd;
+}
+ .el-icon-down {
+     background: url('../assets/images/icon-btn_03.png') no-repeat;
+     background-size: 100%;
+     width: 18px;
+     height: 18px;
+     margin-right: 8px;
+ }
+//下载模板
+.sys-muban-btn {
+    .el-icon-muban {
+        background: url('../assets/images/icon_btn_04.png') no-repeat;
+        background-size: 100%;
+    width: 15px;
+        height: 19px;
+        margin-right: 8px;
+    }
+
+    background-color: #ffa21a;
+}
+//关联团队
+.sys-team-btn {
+    .el-icon-team {
+        background: url('../assets/images/icon-btn_05.png') no-repeat;
+        background-size: 100%;
+    width: 19px;
+        height: 17px;
+        margin-right: 8px;
+    }
+
+    background-color: #55be6e;
+}
+//导入分组
+.el-icon-class{
+    background: url('../assets/images/icon-btn_06.png') no-repeat;
+        background-size: 100%;
+        width: 19px;
+        height: 17px;
+        margin-right: 8px;
+}
+//批量管理
+.sys-manage-btn {
+    .el-icon-manage {
+        background: url('../assets/images/icon-btn_08.png') no-repeat;
+        background-size: 100%;
+    width: 17px;
+        height: 17px;
+        margin-right: 8px;
+    }
+
+    background-color: #ae87b4;
+}
+.sys-green-btn {
+    background-color: #55be6e;
+}
+//查看
+ .el-icon-manage {
+     background: url('../assets/images/icon-btn_07.png') no-repeat;
+     background-size: 100%;
+        width: 16px;
+            height: 17px;
+     margin-right: 8px;
+ }
+ 
